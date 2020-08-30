@@ -1,0 +1,36 @@
+{
+  "name": "chatroom-stock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "zookeeper": "zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties",
+    "kafka": "kafka-server-start /usr/local/etc/kafka/server.properties"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaslimafons/chatroom-stock.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucaslimafons/chatroom-stock/issues"
+  },
+  "homepage": "https://github.com/lucaslimafons/chatroom-stock#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fast-csv": "^4.3.1",
+    "kafka-node": "^5.0.0",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}
